@@ -1,4 +1,4 @@
- # Compiled class file
+# Compiled class file
 *.class
 
 # Log file
@@ -43,4 +43,38 @@ Thumbs.db
 *.key
 *.p12
 secrets/
-credentials/
+credentials/ 
+# Java keystores (often contain private keys + certs)
+*.jks
+*.keystore
+*.truststore
+
+# SSH private keys (in case anyone copies them into the repo by mistake)
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+id_*.priv
+.ssh/
+
+# Cloud credentials
+.aws/
+.azure/
+.gcp/
+*credentials*.json
+*credentials*.yaml
+service-account*.json
+gcloud-service-key.json
+
+# API tokens / generic secret files
+*.token
+*token*
+.netrc
+.npmrc
+.pypirc
+.htpasswd
+
+# Database dumps (can contain real user data)
+*.sql
+*.dump
+dump.rdb
